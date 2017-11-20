@@ -17,7 +17,7 @@
       <file leaf-file-name="SAP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/SAP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
+            <state relative-caret-position="2175">
               <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -26,30 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreadthFirstDirectedPaths.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1965">
-              <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bag.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="139" column="33" lean-forward="false" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordNet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/WordNet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="540">
               <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,61 +41,8 @@
       <file leaf-file-name="Outcast.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/Outcast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding>
-                <element signature="e#126#127#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepthFirstDirectedPaths.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepthFirstOrder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Digraph.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="digraph2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hypernyms11ManyPathsOneAncestor.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -163,10 +90,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1568" />
-    <option name="y" value="-56" />
+    <option name="x" value="194" />
+    <option name="y" value="156" />
     <option name="width" value="1515" />
-    <option name="height" value="1057" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -186,6 +113,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -216,23 +145,6 @@
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,52 +173,7 @@
             </path>
             <path>
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: edu.Princeton:algs4:1.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: edu.Princeton:algs4:1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="algs4-1.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: edu.Princeton:algs4:1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="algs4-1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="algs4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: edu.Princeton:algs4:1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="algs4-1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
@@ -330,9 +197,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,6 +206,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -508,7 +374,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1568" y="-56" width="1515" height="1057" extended-state="0" />
+    <frame x="194" y="156" width="1515" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -523,7 +389,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25254583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -547,38 +413,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/WordNet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -599,62 +437,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="157" column="35" lean-forward="true" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="139" column="33" lean-forward="true" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/WordNet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -665,20 +454,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Cycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-849">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/CC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Cycle.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/CC.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -686,42 +463,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets15.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets3.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets6.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets15.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/test1.txt" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms15Path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/CycleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms15Path.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/CycleTest.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -729,34 +476,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232416">
-          <caret line="82163" column="10" lean-forward="false" selection-start-line="82163" selection-start-column="10" selection-end-line="82163" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms15Tree.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms500-subgraph.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2913">
-          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms15Tree.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms500-subgraph.txt" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/In.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectI/CodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -764,149 +487,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearchST.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2944">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearchST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="62" column="13" lean-forward="false" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6TwoAncestors.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6InvalidCycle+Path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4817">
-          <caret line="82192" column="0" lean-forward="true" selection-start-line="82192" selection-start-column="0" selection-end-line="82192" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms3InvalidTwoRoots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms3InvalidCycle.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6InvalidTwoRoots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="139" column="33" lean-forward="false" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearchST.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BST.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstPaths.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearchST.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BinarySearch.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6TwoAncestors.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6InvalidCycle+Path.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms3InvalidTwoRoots.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms3InvalidCycle.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6InvalidTwoRoots.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/SAP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
+        <state relative-caret-position="2175">
           <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -916,7 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/WordNet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="540">
           <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -926,12 +528,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/Outcast.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#126#127#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
