@@ -1,4 +1,4 @@
-package java.com.kingmanzhang.ProjectI;
+package com.kingmanzhang.ProjectI;
 
 public class Outcast {
 }
