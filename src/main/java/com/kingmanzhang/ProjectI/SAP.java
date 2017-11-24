@@ -1,12 +1,12 @@
 package com.kingmanzhang.ProjectI;
 
 
-import edu.princeton.cs.algs4.BreadthFirstDirectedPaths;
-import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.*;
+
 import java.util.ArrayList;
 
 public class SAP {
-    private Digraph G;
+    private final Digraph G;
 
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
@@ -42,25 +42,10 @@ public class SAP {
                 ancestor = i;
             }
         }
-        /**
-        if (w_path.hasPathTo(v)) {
-            sap(w, v);
-        }
-        if (v_path.hasPathTo(w)) {
-            len = v_path.distTo(w);
-            ancestor = w;
-        }
-        for (int i = 0; i < G.V(); i++) {
-            if (v_path.hasPathTo(i) && i != w) {
-                BreadthFirstDirectedPaths i_path = new BreadthFirstDirectedPaths(G.reverse(), i);
-                if (i_path.hasPathTo(w) && v_path.distTo(i) + i_path.distTo(w) < len) {
-                    len = v_path.distTo(i) + i_path.distTo(w);
-                    ancestor = i;
-                }
-            }
-        }
-         **/
 
+        if (len == Integer.MAX_VALUE) {
+            len = -1;
+        }
         return new int[]{ancestor, len};
 
     }
@@ -104,6 +89,9 @@ public class SAP {
                 len = temp;
                 ancestor = i;
             }
+        }
+        if (len == Integer.MAX_VALUE) {
+            len = -1;
         }
         return new int[]{ancestor, len};
 
@@ -154,6 +142,18 @@ public class SAP {
 
     // do unit testing of this class
     public static void main(String[] args) {
+/**
+        In in = new In(args[0]);
+        Digraph G = new Digraph(in);
+        SAP sap = new SAP(G);
+        while (!StdIn.isEmpty()) {
+            int v = StdIn.readInt();
+            int w = StdIn.readInt();
+            int length   = sap.length(v, w);
+            int ancestor = sap.ancestor(v, w);
+            StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
+        }
+**/
 
     }
 }

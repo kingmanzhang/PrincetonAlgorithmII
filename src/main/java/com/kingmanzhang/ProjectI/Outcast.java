@@ -1,7 +1,7 @@
 package com.kingmanzhang.ProjectI;
 
 public class Outcast {
-    private WordNet wordnet;
+    private final WordNet wordnet;
 
     public Outcast (WordNet wordnet) {
         this.wordnet = wordnet;
@@ -9,7 +9,7 @@ public class Outcast {
 
     public String outcast(String[] nouns) {
 
-        int [] d = new int[nouns.length];
+        int[] d = new int[nouns.length];
         int[][] dist = new int[nouns.length][nouns.length];
         for (int i = 0; i < nouns.length; i++) {
             d[i] = 0;
@@ -39,6 +39,7 @@ public class Outcast {
     }
 
     public static void main(String[] args){
+
 
     }
 }
