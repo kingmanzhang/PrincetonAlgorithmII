@@ -4,9 +4,13 @@ public class Outcast {
     private final WordNet wordnet;
 
     public Outcast (WordNet wordnet) {
+
         this.wordnet = wordnet;
     }
 
+    /**
+     * Return the outcast among a set of nouns in a wordset
+     */
     public String outcast(String[] nouns) {
 
         int[] d = new int[nouns.length];
@@ -37,9 +41,5 @@ public class Outcast {
         }
         return nouns[outcast_i];
     }
-
-    public static void main(String[] args){
-
-
-    }
+    
 }
