@@ -13,8 +13,7 @@ public class SAP {
     public SAP(Digraph G) {
         this.G = new Digraph(G);
     }
-
-    //
+    
 
     /**
      * helper method to test whether a number is a valid vertex
@@ -73,8 +72,6 @@ public class SAP {
         return sap(v, w)[1];
 
     }
-
-    //
 
     /**
      * Return a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path

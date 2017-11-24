@@ -41,5 +41,5 @@ public class Outcast {
         }
         return nouns[outcast_i];
     }
-    
+
 }
