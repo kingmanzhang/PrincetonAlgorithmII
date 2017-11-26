@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0383b92f-5c37-4f7c-93a0-0fd8a8b62b57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeamCarver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeamCarver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2475">
-              <caret line="165" column="8" lean-forward="false" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+            <state relative-caret-position="906">
+              <caret line="149" column="2" lean-forward="false" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,10 +26,53 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SeamCarverTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="773">
+              <caret line="115" column="39" lean-forward="false" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pattern-Law.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Law.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pattern-Lee.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Lee.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pattern-small.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-small.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomSeq.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/RandomSeq.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Picture.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1590">
+            <state relative-caret-position="2190">
               <caret line="164" column="12" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,8 +97,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -94,6 +137,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/Outcast.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/SAP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java" />
       </list>
     </option>
   </component>
@@ -106,11 +150,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="23" />
-    <option name="width" value="1237" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1280" />
+    <option name="y" value="-56" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -170,6 +214,36 @@
             <path>
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectII" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectII" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +285,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kingmanzhang.ProjectII" />
       <recent name="com.kingmanzhang.ProjectI" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -221,6 +296,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/ProjectII" />
       <recent name="$PROJECT_DIR$/src/test/resources/ProjectI" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -237,45 +313,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WordNetTest.distanceTest">
-    <configuration name="WordNetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SeamCarverTest.removeVerticalSeam">
+    <configuration name="SeamCarverTest.energy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectI.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectI" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectI.WordNetTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WordNetTest.constructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PrincetonAlgorithmII" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectI" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectI.WordNetTest" />
-      <option name="METHOD_NAME" value="constructorTest" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
+      <option name="METHOD_NAME" value="energy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -288,19 +339,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="WordNetTest.distanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeamCarverTest.findVerticalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectI.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectI" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectI.WordNetTest" />
-      <option name="METHOD_NAME" value="distanceTest" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
+      <option name="METHOD_NAME" value="findVerticalSeam" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -313,19 +364,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="WordNetTest.nounsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeamCarverTest.height" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectI.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectI" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectI.WordNetTest" />
-      <option name="METHOD_NAME" value="nounsTest" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
+      <option name="METHOD_NAME" value="height" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -338,19 +389,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="WordNetTest.sapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeamCarverTest.removeVerticalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectI.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectI" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectI.WordNetTest" />
-      <option name="METHOD_NAME" value="sapTest" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
+      <option name="METHOD_NAME" value="removeVerticalSeam" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SeamCarverTest.width" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PrincetonAlgorithmII" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
+      <option name="METHOD_NAME" value="width" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -445,19 +521,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WordNetTest.constructorTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WordNetTest.sapTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WordNetTest.nounsTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WordNetTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WordNetTest.distanceTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.width" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.height" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.energy" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findVerticalSeam" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeVerticalSeam" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WordNetTest.distanceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordNetTest.sapTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WordNetTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WordNetTest.constructorTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WordNetTest.nounsTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeVerticalSeam" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findVerticalSeam" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.energy" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.height" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.width" />
       </list>
     </recent_temporary>
   </component>
@@ -475,54 +551,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OutcastTest_outcast - 2017.11.23 at 21h 37m 30s.xml">
-      <configuration name="OutcastTest.outcast" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 00m 32s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OutcastTest_outcast - 2017.11.23 at 21h 38m 31s.xml">
-      <configuration name="OutcastTest.outcast" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 01m 35s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OutcastTest_outcast - 2017.11.23 at 21h 38m 51s.xml">
-      <configuration name="OutcastTest.outcast" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 05m 42s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest - 2017.11.23 at 22h 02m 38s.xml">
-      <configuration name="WordNetTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 11m 44s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_constructorTest - 2017.11.23 at 21h 37m 00s.xml">
-      <configuration name="WordNetTest.constructorTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 13m 27s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_constructorTest - 2017.11.23 at 22h 02m 21s.xml">
-      <configuration name="WordNetTest.constructorTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 16m 34s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_distanceTest - 2017.11.23 at 22h 07m 24s.xml">
-      <configuration name="WordNetTest.distanceTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 17m 03s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_nounsTest - 2017.11.23 at 21h 46m 20s.xml">
-      <configuration name="WordNetTest.nounsTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 17m 33s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_sapTest - 2017.11.23 at 21h 36m 48s.xml">
-      <configuration name="WordNetTest.sapTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 19m 42s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetTest_sapTest - 2017.11.23 at 22h 07m 12s.xml">
-      <configuration name="WordNetTest.sapTest" configurationId="JUnit" />
+    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.26 at 17h 20m 59s.xml">
+      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1237" height="777" extended-state="6" />
+    <frame x="1280" y="-56" width="1920" height="1057" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50070924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35837564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25222313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -533,7 +610,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -552,23 +628,11 @@
           </properties>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstOrder.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms11ManyPathsOneAncestor.txt" />
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Bag.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets500-subgraph.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Cycle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -882,7 +946,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1590">
+        <state relative-caret-position="2190">
           <caret line="164" column="12" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -890,10 +954,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/RandomSeq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Lee.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-small.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-small_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Law.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="165" column="8" lean-forward="false" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+        <state relative-caret-position="906">
+          <caret line="149" column="2" lean-forward="false" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="115" column="39" lean-forward="false" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

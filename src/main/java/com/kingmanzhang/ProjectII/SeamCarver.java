@@ -12,11 +12,11 @@ import java.util.Stack;
 
 public class SeamCarver {
 
-    private final Picture picture;
+    private Picture picture;
     private int width;
     private int height;
-    double[] distTo ; //store distance
-    int[] edgeTo; //store edge
+    double[][] distTo ; //store distance
+    int[][] edgeTo; //store edge
 
     /**
      * create a seam carver object based on the given picture
@@ -24,11 +24,14 @@ public class SeamCarver {
      */
     public SeamCarver(Picture picture){
 
+        if(picture == null) {
+            throw new IllegalArgumentException();
+        }
         this.picture = picture;
         this.width = picture.width();
         this.height = picture.height();
-        this.distTo = new double[this.width * this.height];
-        this.edgeTo = new int[this.width * this.height];
+        this.distTo = new double[this.width][this.height];
+        this.edgeTo = new int[this.width][this.height];
     }
 
     /**
@@ -80,6 +83,17 @@ public class SeamCarver {
      */
     public int[] findHorizontalSeam(){
 
+        for (int i = 0; i < this.height; i++) {
+            edgeTo[0][i] = -1;
+            distTo[0][i] = 0.0;
+        }
+
+        for (int i = 1; i < this.width; i++) {
+            for (int j = 0; j < this.width; j++) {
+                edgeTo[j][i] = -1;
+                distTo[j][i] = Double.MAX_VALUE;
+            }
+        }
 
 
         return null;
@@ -91,22 +105,27 @@ public class SeamCarver {
      */
     public int[] findVerticalSeam(){
 
-        for (int i = 0; i < this.width * this.height; i++) {
-            edgeTo[i] = -1;
-            if (i < this.width) distTo[i] = 0.0;  //first row: distTo set to 0;
-            else distTo[i] = Double.MAX_VALUE; //other rows: distTo set to positive infinity.
+        for (int i = 0; i < this.width; i++) {
+            edgeTo[i][0] = -1;
+            distTo[i][0] = 0.0; //first row: distTo set to 0;
+        }
+
+        for (int i = 1; i < this.height; i++){
+            for (int j = 0; j < this.width; j++){
+                edgeTo[j][i] = -1;
+                distTo[j][i] = Double.MAX_VALUE;
+            }
         }
 
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < this.width; j++) {
-                Pixel pixel = new Pixel(i, j);
+                Pixel pixel = new Pixel(j, i);
                 if (pixel.vAdj() != null) {
                     for (Pixel v : pixel.vAdj()) {
-                        if (this.distTo[v.y * this.width + v.x] > this.distTo[i * this.width + j] + pixel.energy) {
-                            this.distTo[v.y * this.width + v.x] = this.distTo[i * this.width + j] + pixel.energy;
-                            this.edgeTo[v.y * this.width + v.x] = i * this.width + j;
+                        if (this.distTo[v.x][v.y] > this.distTo[j][i] + pixel.energy) {
+                            this.distTo[v.x][v.y] = this.distTo[j][i] + pixel.energy;
+                            this.edgeTo[v.x][v.y] = j;   //stores colume of pixel coming to it
                         }
-
                     }
                 }
             }
@@ -118,30 +137,22 @@ public class SeamCarver {
     private int[] sp() {
         int target = -1;
         double shortest = Double.MAX_VALUE;
-        for (int i = this.width * (this.height - 1); i < this.width * this.height; i++) {
-            if (distTo[i] < shortest) {
+        for (int i = 0; i < this.width; i++) {
+//StdOut.println(distTo[i][this.height -1]);
+            if (distTo[i][this.height - 1] < shortest) {
                 target = i;
-                shortest = distTo[i];
+                shortest = distTo[i][this.height - 1];
             }
         }
 
-        Stack<Integer> sp = new Stack<>();
-        int i = target;
-        do {
-            sp.push(i % this.width);
-            i = edgeTo[target];
-        } while (i != -1);
-        sp.push(i % this.width);
-
-        int[] sp_array = new int[this.height];
-        Iterator itr = sp.iterator();
-
-        i = 0;
-        while (itr.hasNext()) {
-            sp_array[i] = sp.pop();
-            i++;
+        int[] path = new int[this.height];
+        for (int i = this.height - 1; i >= 0; i--) {
+//StdOut.printf("i is: %d, target is: %d \n", i, target);
+            path[i] = target;
+            target = edgeTo[target][i];
         }
-        return sp_array;
+
+        return path;
     }
 
     /**
@@ -167,20 +178,26 @@ public class SeamCarver {
             throw new IllegalArgumentException();
         }
 
-        int j = 0;
         int[] vSeam = findVerticalSeam();
+        Picture newPicture = new Picture(this.width -1, this.height);
         for (int i = 0; i < this.height; i++) {
-            Pixel pixel = new Pixel(vSeam[i] ,j);
+            for (int j = 0; j < vSeam[i]; j++) {
+                newPicture.set(j, i, this.picture.get(j, i));
+            }
+            for (int j = vSeam[i]; j < this.width - 1; j++) {
+                newPicture.set(j, i, this.picture.get(j + 1, i));
+            }
         }
-
-
-
+        this.picture = newPicture;
+        this.width = this.picture.width(); //update width
+        this.height = this.picture.width(); //update height
+//StdOut.println("Width after removing vertical seam: " + newPicture.width());
     }
 
 
     private class Pixel {
-        int x;
-        int y;
+        int x; //col
+        int y; //row
         double energy;
 
         Pixel(int x, int y) {
@@ -197,7 +214,7 @@ public class SeamCarver {
         }
 
         private double calculateEnergy() {
-            if (x == 0 || x == width || y == 0 || y == height) {
+            if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
                 return 1000.0;
             } else {
                 Color right = picture.get(x + 1, y);
