@@ -1,13 +1,9 @@
 package com.kingmanzhang.ProjectII;
 
 import edu.princeton.cs.algs4.Picture;
-import edu.princeton.cs.algs4.StdOut;
-
-import java.awt.*;
+import java.awt.Color;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Stack;
 
 
 public class SeamCarver {
@@ -15,16 +11,18 @@ public class SeamCarver {
     private Picture picture;
     private int width;
     private int height;
-    double[][] distTo ; //store distance
-    int[][] edgeTo; //store edge
+    private double[][] distTo; //store distance
+    private int[][] edgeTo; //store edge
+    private double [][] energy; //store energy
 
     /**
      * create a seam carver object based on the given picture
+     *
      * @param picture
      */
-    public SeamCarver(Picture picture){
+    public SeamCarver(Picture picture) {
 
-        if(picture == null) {
+        if (picture == null) {
             throw new IllegalArgumentException();
         }
         this.picture = picture;
@@ -32,32 +30,43 @@ public class SeamCarver {
         this.height = picture.height();
         this.distTo = new double[this.width][this.height];
         this.edgeTo = new int[this.width][this.height];
+        this.energy = new double[this.width][this.height];
+
+        for (int i = 0; i < this.height; i++) {
+            for (int j = 0; j < this.width; j++) {
+                Pixel pixel = new Pixel(j, i);
+                energy[j][i] = pixel.energy;
+            }
+        }
     }
 
     /**
      * current picture
+     *
      * @return
      */
     public Picture picture() {
 
-        return new Picture(this.picture);
+        return new Picture(picture);
 
     }
 
     /**
      * width of current picture
+     *
      * @return
      */
-    public int width(){
+    public int width() {
 
         return this.width;
     }
 
     /**
      * height of current picture
+     *
      * @return
      */
-    public int height()  {
+    public int height() {
 
         return this.height;
 
@@ -65,53 +74,91 @@ public class SeamCarver {
 
     /**
      * energy of pixel at column x and row y
+     *
      * @param x
      * @param y
      * @return
      */
-    public  double energy(int x, int y){
+    public double energy(int x, int y) {
 
-        Pixel pixel = new Pixel(x, y);
-        return pixel.energy;
+        return energy[x][y];
 
     }
 
 
     /**
      * sequence of indices for horizontal seam
+     *
      * @return
      */
-    public int[] findHorizontalSeam(){
+    public int[] findHorizontalSeam() {
 
         for (int i = 0; i < this.height; i++) {
-            edgeTo[0][i] = -1;
-            distTo[0][i] = 0.0;
+            edgeTo[0][i] = i;
+            distTo[0][i] = 0.0; //first column: disTo set to 0
         }
 
         for (int i = 1; i < this.width; i++) {
-            for (int j = 0; j < this.width; j++) {
-                edgeTo[j][i] = -1;
-                distTo[j][i] = Double.MAX_VALUE;
+            for (int j = 0; j < this.height; j++) {
+                edgeTo[i][j] = -1;
+                distTo[i][j] = Double.MAX_VALUE; //Other columns: distTo set to positive infinity
+            }
+        }
+
+        for (int i = 0; i < this.width; i++) {
+            for (int j = 0; j < this.height; j++) {
+                Pixel pixel = new Pixel(i, j);
+                if (pixel.hAdj() != null) {
+                    for (Pixel v : pixel.hAdj()) {
+                        if (this.distTo[v.x][v.y] > this.distTo[i][j] + energy[i][j]) {
+                            this.distTo[v.x][v.y] = this.distTo[i][j] + energy[i][j];
+                            this.edgeTo[v.x][v.y] = j; //store row of pixel coming to it
+                        }
+                    }
+                }
             }
         }
 
 
-        return null;
+        return hSP();
+    }
+
+
+    private int[] hSP() {
+        int target = -1;
+        double shortest = Double.MAX_VALUE;
+        for (int i = 0; i < this.height; i++) {
+//StdOut.println(distTo[i][this.height -1]);
+            if (distTo[this.width - 1][i] < shortest) {
+                target = i;
+                shortest = distTo[this.width - 1][i];
+            }
+        }
+
+        int[] path = new int[this.width];
+        for (int i = this.width - 1; i >= 0; i--) {
+//StdOut.printf("i is: %d, target is: %d \n", i, target);
+            path[i] = target;
+            target = edgeTo[i][target];
+        }
+
+        return path;
     }
 
     /**
      * sequence of indices for vertical seam
+     *
      * @return
      */
-    public int[] findVerticalSeam(){
+    public int[] findVerticalSeam() {
 
         for (int i = 0; i < this.width; i++) {
-            edgeTo[i][0] = -1;
+            edgeTo[i][0] = i;
             distTo[i][0] = 0.0; //first row: distTo set to 0;
         }
 
-        for (int i = 1; i < this.height; i++){
-            for (int j = 0; j < this.width; j++){
+        for (int i = 1; i < this.height; i++) {
+            for (int j = 0; j < this.width; j++) {
                 edgeTo[j][i] = -1;
                 distTo[j][i] = Double.MAX_VALUE;
             }
@@ -122,8 +169,8 @@ public class SeamCarver {
                 Pixel pixel = new Pixel(j, i);
                 if (pixel.vAdj() != null) {
                     for (Pixel v : pixel.vAdj()) {
-                        if (this.distTo[v.x][v.y] > this.distTo[j][i] + pixel.energy) {
-                            this.distTo[v.x][v.y] = this.distTo[j][i] + pixel.energy;
+                        if (this.distTo[v.x][v.y] > this.distTo[j][i] + energy[j][i]) {
+                            this.distTo[v.x][v.y] = this.distTo[j][i] + energy[j][i];
                             this.edgeTo[v.x][v.y] = j;   //stores colume of pixel coming to it
                         }
                     }
@@ -131,10 +178,10 @@ public class SeamCarver {
             }
         }
 
-        return sp();
+        return vSp();
     }
 
-    private int[] sp() {
+    private int[] vSp() {
         int target = -1;
         double shortest = Double.MAX_VALUE;
         for (int i = 0; i < this.width; i++) {
@@ -157,29 +204,50 @@ public class SeamCarver {
 
     /**
      * remove horizontal seam from current picture
+     *
      * @param seam
      */
-    public void removeHorizontalSeam(int[] seam){
+    public void removeHorizontalSeam(int[] seam) {
 
-        if (seam == null) {
+        if (this.height <= 1) {
             throw new IllegalArgumentException();
         }
+
+        validateHSeam(seam);
+
+        int[] hSeam = findHorizontalSeam();
+        Picture newPicture = new Picture(this.width, this.height - 1);
+
+        for (int i = 0; i < this.width; i++) {
+            for (int j = 0; j < hSeam[i]; j++) {
+                newPicture.set(i, j, this.picture.get(i, j));
+            }
+            for (int j = hSeam[i]; j < this.height - 1; j++) {
+                newPicture.set(i, j, this.picture.get(i, j + 1));
+            }
+        }
+
+        this.picture = newPicture;
+        this.height = this.picture.width(); //update height
 
 
     }
 
     /**
      * remove vertical seam from current picture
+     *
      * @param seam
      */
-    public void removeVerticalSeam(int[] seam){
+    public void removeVerticalSeam(int[] seam) {
 
-        if (seam == null) {
+        if (this.width <= 1) {
             throw new IllegalArgumentException();
         }
 
+        validateVSeam(seam);
+
         int[] vSeam = findVerticalSeam();
-        Picture newPicture = new Picture(this.width -1, this.height);
+        Picture newPicture = new Picture(this.width - 1, this.height);
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < vSeam[i]; j++) {
                 newPicture.set(j, i, this.picture.get(j, i));
@@ -190,9 +258,51 @@ public class SeamCarver {
         }
         this.picture = newPicture;
         this.width = this.picture.width(); //update width
-        this.height = this.picture.width(); //update height
 //StdOut.println("Width after removing vertical seam: " + newPicture.width());
     }
+
+    private void validateVSeam(int[] vSeam) {
+
+        if (vSeam == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if (vSeam.length != this.height) {
+            throw new IllegalArgumentException();
+        }
+
+        for (int i = 0; i < vSeam.length; i++) {
+            if (vSeam[i] < 0 || vSeam[i] > this.width - 1) {
+                throw new IllegalArgumentException();
+            }
+
+            if (i < vSeam.length - 1 && Math.abs(vSeam[i + 1] - vSeam[i]) > 1) {
+                throw new IllegalArgumentException();
+            }
+        }
+    }
+
+    private void validateHSeam(int[] hSeam) {
+
+        if (hSeam == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if(hSeam.length != this.width) {
+            throw new IllegalArgumentException();
+        }
+
+        for (int i = 0; i < hSeam.length; i++) {
+            if(hSeam[i] < 0 || hSeam[i] > this.height - 1) {
+                throw new IllegalArgumentException();
+            } else {
+                if (i < hSeam.length - 1 && Math.abs(hSeam[i + 1] - hSeam[i]) > 1) {
+                    throw new IllegalArgumentException();
+                }
+            }
+        }
+    }
+
 
 
     private class Pixel {
@@ -239,19 +349,19 @@ public class SeamCarver {
             try {
                 vAdj.add(new Pixel(x - 1, y + 1));
             } catch (IllegalArgumentException e) {
-                StdOut.println("No left lower pixel. Current pixel is on the left edge.");
+                //StdOut.println("No left lower pixel. Current pixel is on the left edge.");
             }
 
             try {
                 vAdj.add(new Pixel(x, y + 1));
             } catch (IllegalArgumentException e) {
-                StdOut.println(("No lower pixel. Current pixel is on the bottom edge."));
+                //StdOut.println(("No lower pixel. Current pixel is on the bottom edge."));
             }
 
             try {
                 vAdj.add(new Pixel(x + 1, y + 1));
             } catch (IllegalArgumentException e) {
-                StdOut.println(("No lower right pixel. Current pixel is on the right edge"));
+                //StdOut.println(("No lower right pixel. Current pixel is on the right edge"));
             }
 
             return vAdj;
@@ -262,19 +372,19 @@ public class SeamCarver {
             try {
                 hAdj.add(new Pixel(x + 1, y - 1));
             } catch (IllegalArgumentException e) {
-                StdOut.println("No right upper pixel. Current pixel is on the upper edge.");
+                //StdOut.println("No right upper pixel. Current pixel is on the upper edge.");
             }
 
             try {
                 hAdj.add(new Pixel(x + 1, y));
             } catch (IllegalArgumentException e) {
-                StdOut.println("No right pixel. Current pixel is on the right edge.");
+                //StdOut.println("No right pixel. Current pixel is on the right edge.");
             }
 
             try {
                 hAdj.add(new Pixel(x + 1, y + 1));
             } catch (IllegalArgumentException e) {
-                StdOut.println("No right bottom pixel. Current pixel is on the bottom edge");
+                //StdOut.println("No right bottom pixel. Current pixel is on the bottom edge");
             }
 
             return hAdj;

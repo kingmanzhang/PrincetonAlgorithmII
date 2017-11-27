@@ -65,6 +65,14 @@ class SeamCarverTest {
 
     @Test
     void findHorizontalSeam() {
+        Picture pattern_Lee = new Picture("src/test/resources/ProjectII/pattern-Lee.png");
+        SeamCarver seamCarver = new SeamCarver(pattern_Lee);
+        int[] hSeam = seamCarver.findHorizontalSeam();
+        for (int i = 0; i < hSeam.length; i++) {
+            StdOut.printf("Col %d: \t\t pixel[%d, %d]\n", i, i, hSeam[i]);
+        }
+
+
     }
 
     @Test
@@ -80,6 +88,18 @@ class SeamCarverTest {
 
     @Test
     void removeHorizontalSeam() {
+
+        Picture pattern_ocean = new Picture("src/test/resources/ProjectII/HJoceanSmall.png");
+        SeamCarver seamCarver = new SeamCarver(pattern_ocean);
+        int original_height = seamCarver.height();
+        for (int i = 0; i < 100; i++) {
+            seamCarver.removeHorizontalSeam(seamCarver.findHorizontalSeam());
+            pattern_ocean = seamCarver.picture();
+            seamCarver = new SeamCarver(pattern_ocean);
+        }
+        assertEquals(original_height - 100, seamCarver.height());
+        seamCarver.picture().save("src/test/resources/ProjectII/pattern-ocean_h100.png");
+
 
     }
 
@@ -111,8 +131,6 @@ class SeamCarverTest {
             pattern_ocean = seamCarver.picture();
             seamCarver = new SeamCarver(pattern_ocean);
         }
-
-
         assertEquals(original_width - 50, seamCarver.width());
         seamCarver.picture().save("src/test/resources/ProjectII/pattern-ocean_50.png");
 
