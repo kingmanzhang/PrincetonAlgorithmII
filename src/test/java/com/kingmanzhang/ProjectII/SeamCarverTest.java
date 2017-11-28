@@ -1,14 +1,8 @@
 package com.kingmanzhang.ProjectII;
 
-import edu.princeton.cs.algs4.RandomSeq;
 import edu.princeton.cs.algs4.StdOut;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import edu.princeton.cs.algs4.Picture;
-
-import java.awt.*;
-import java.util.Random;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class SeamCarverTest {

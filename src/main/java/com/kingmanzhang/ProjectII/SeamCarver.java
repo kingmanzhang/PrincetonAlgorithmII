@@ -1,8 +1,11 @@
 package com.kingmanzhang.ProjectII;
 
 import edu.princeton.cs.algs4.Picture;
+import edu.princeton.cs.algs4.StdOut;
+
 import java.awt.Color;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -25,20 +28,32 @@ public class SeamCarver {
         if (picture == null) {
             throw new IllegalArgumentException();
         }
-        this.picture = picture;
+        this.picture = new Picture(picture);
         this.width = picture.width();
         this.height = picture.height();
         this.distTo = new double[this.width][this.height];
         this.edgeTo = new int[this.width][this.height];
         this.energy = new double[this.width][this.height];
-
-        for (int i = 0; i < this.height; i++) {
+        populateEnergyTable(this.energy);
+/**
+        for (int i = 0; i < this.height; i++) {        //initialize energy 2D array
             for (int j = 0; j < this.width; j++) {
                 Pixel pixel = new Pixel(j, i);
-                energy[j][i] = pixel.energy;
+                energy[j][i] = pixel.energy();
+            }
+        }
+ **/
+    }
+
+    private void populateEnergyTable (double[][] energy) {
+        for (int i = 0; i < this.height; i++) {        //initialize energy 2D array
+            for (int j = 0; j < this.width; j++) {
+                Pixel pixel = new Pixel(j, i);
+                energy[j][i] = pixel.energy();
             }
         }
     }
+
 
     /**
      * current picture
@@ -47,7 +62,7 @@ public class SeamCarver {
      */
     public Picture picture() {
 
-        return new Picture(picture);
+        return new Picture(this.picture);
 
     }
 
@@ -81,6 +96,7 @@ public class SeamCarver {
      */
     public double energy(int x, int y) {
 
+        validate(x, y);
         return energy[x][y];
 
     }
@@ -110,6 +126,7 @@ public class SeamCarver {
                 Pixel pixel = new Pixel(i, j);
                 if (pixel.hAdj() != null) {
                     for (Pixel v : pixel.hAdj()) {
+ // StdOut.printf("width: %d, height: %d, i: %d, j: %d, v.x: %d, v.y: %d", this.width, this.height, i, j, v.x, v.y);
                         if (this.distTo[v.x][v.y] > this.distTo[i][j] + energy[i][j]) {
                             this.distTo[v.x][v.y] = this.distTo[i][j] + energy[i][j];
                             this.edgeTo[v.x][v.y] = j; //store row of pixel coming to it
@@ -118,7 +135,6 @@ public class SeamCarver {
                 }
             }
         }
-
 
         return hSP();
     }
@@ -215,22 +231,47 @@ public class SeamCarver {
 
         validateHSeam(seam);
 
-        int[] hSeam = findHorizontalSeam();
+
         Picture newPicture = new Picture(this.width, this.height - 1);
 
         for (int i = 0; i < this.width; i++) {
-            for (int j = 0; j < hSeam[i]; j++) {
+            for (int j = 0; j < seam[i]; j++) {
                 newPicture.set(i, j, this.picture.get(i, j));
             }
-            for (int j = hSeam[i]; j < this.height - 1; j++) {
+            for (int j = seam[i]; j < this.height - 1; j++) {
                 newPicture.set(i, j, this.picture.get(i, j + 1));
             }
         }
-
         this.picture = newPicture;
-        this.height = this.picture.width(); //update height
+        this.height = this.picture.height(); //update height
+        //afterRemoveHSeam(seam);  //update energy table
+        populateEnergyTable(this.energy); //TODO: use a more efficient way.
 
+    }
 
+    private void afterRemoveHSeam(int[] seam){ //update after removing a seam
+
+        double [][] newEnergy = new double[this.picture.width()][this.picture.height()];
+
+        for (int i = 0; i < this.width; i++) { //copy energy table to new energy array
+            System.arraycopy(energy[i], 0, newEnergy[i], 0, seam[i]); //TODO: WRONG way of copying. use for().
+            if(seam[i] < this.height) {
+//  StdOut.printf("picture size: col: %d, row: %d \n", this.width, this.height);
+// StdOut.printf("seam[%d]: %d, this.height: %d", i, seam[i], this.height);
+
+                System.arraycopy(energy[i], seam[i] + 1, newEnergy[i], seam[i], this.width - seam[i]);
+            }
+            if(seam[i] == 0) {
+                newEnergy[i][0] = new Pixel(i, 0).energy();
+            } else if (seam[i] == this.height) {
+                newEnergy[i][this.height - 1] = new Pixel(i, this.height - 1).energy();
+            } else {
+                newEnergy[i][seam[i] - 1] = new Pixel(seam[i] - 1, i).energy(); //recalculate energy for pixels along seams
+                newEnergy[i][seam[i]] = new Pixel(seam[i], i).energy();
+            }
+        }
+
+        this.energy = newEnergy;
     }
 
     /**
@@ -246,19 +287,44 @@ public class SeamCarver {
 
         validateVSeam(seam);
 
-        int[] vSeam = findVerticalSeam();
         Picture newPicture = new Picture(this.width - 1, this.height);
         for (int i = 0; i < this.height; i++) {
-            for (int j = 0; j < vSeam[i]; j++) {
+            for (int j = 0; j < seam[i]; j++) {
                 newPicture.set(j, i, this.picture.get(j, i));
             }
-            for (int j = vSeam[i]; j < this.width - 1; j++) {
+            for (int j = seam[i]; j < this.width - 1; j++) {
                 newPicture.set(j, i, this.picture.get(j + 1, i));
             }
         }
         this.picture = newPicture;
         this.width = this.picture.width(); //update width
-//StdOut.println("Width after removing vertical seam: " + newPicture.width());
+        //afterRemmoveVSeam(seam);//update energy table
+        populateEnergyTable(this.energy);//TODO: use a more efficient way.
+    }
+
+    private void afterRemmoveVSeam(int[] seam) {
+
+        double [][] newEnergy = new double[this.picture.width()][this.picture.height()];
+
+        for (int i = 0; i < this.height; i++) { //copy energy table to new energy array
+            System.arraycopy(energy[i], 0, newEnergy[i], 0, seam[i]);
+            if (seam[i] < this.width) {
+ StdOut.printf("seam[%d]: %d; picture dimention: col: %d, row: %d", i, seam[i], this.width, this.height);
+                System.arraycopy(energy[i], seam[i] + 1, newEnergy[i], seam[i], this.width - seam[i]);
+            }
+            if (seam[i] == 0) {
+                newEnergy[0][i] = new Pixel(0, i).energy();
+            } else if (seam[i] == this.width) {
+                newEnergy[this.width - 1][i] = new Pixel(this.width -1, i).energy();
+            } else {
+                newEnergy[seam[i] - 1][i] = new Pixel(seam[i] - 1, i).energy(); //recalculate energy for pixels along seams
+                newEnergy[seam[i]][i] = new Pixel(seam[i], i).energy();
+            }
+
+        }
+
+        this.energy = newEnergy;
+
     }
 
     private void validateVSeam(int[] vSeam) {
@@ -303,24 +369,24 @@ public class SeamCarver {
         }
     }
 
+    private void validate(int x, int y) {
+        if (x < 0 || x >= width || y < 0 || y >= height) {
+            throw new IllegalArgumentException();
+        }
+    }
 
 
     private class Pixel {
         int x; //col
         int y; //row
-        double energy;
 
         Pixel(int x, int y) {
-            validate(x, y);
             this.x = x;
             this.y = y;
-            this.energy = this.calculateEnergy();
         }
 
-        private void validate(int x, int y) {
-            if (x < 0 || x >= width || y < 0 || y >= height) {
-                throw new IllegalArgumentException();
-            }
+        private double energy() {
+            return this.calculateEnergy();
         }
 
         private double calculateEnergy() {
@@ -347,18 +413,21 @@ public class SeamCarver {
 
             List<Pixel> vAdj = new ArrayList<>();
             try {
+                validate(x -1, y + 1);
                 vAdj.add(new Pixel(x - 1, y + 1));
             } catch (IllegalArgumentException e) {
                 //StdOut.println("No left lower pixel. Current pixel is on the left edge.");
             }
 
             try {
+                validate(x, y + 1);
                 vAdj.add(new Pixel(x, y + 1));
             } catch (IllegalArgumentException e) {
                 //StdOut.println(("No lower pixel. Current pixel is on the bottom edge."));
             }
 
             try {
+                validate(x + 1, y + 1);
                 vAdj.add(new Pixel(x + 1, y + 1));
             } catch (IllegalArgumentException e) {
                 //StdOut.println(("No lower right pixel. Current pixel is on the right edge"));
@@ -370,18 +439,21 @@ public class SeamCarver {
         Iterable<Pixel> hAdj(){
             List<Pixel> hAdj = new ArrayList<>();
             try {
+                validate(x + 1, y -1);
                 hAdj.add(new Pixel(x + 1, y - 1));
             } catch (IllegalArgumentException e) {
                 //StdOut.println("No right upper pixel. Current pixel is on the upper edge.");
             }
 
             try {
+                validate(x + 1, y);
                 hAdj.add(new Pixel(x + 1, y));
             } catch (IllegalArgumentException e) {
                 //StdOut.println("No right pixel. Current pixel is on the right edge.");
             }
 
             try {
+                validate(x + 1, y + 1);
                 hAdj.add(new Pixel(x + 1, y + 1));
             } catch (IllegalArgumentException e) {
                 //StdOut.println("No right bottom pixel. Current pixel is on the bottom edge");
@@ -390,21 +462,5 @@ public class SeamCarver {
             return hAdj;
         }
     }
-/**
-    private int[] vAdj(int i) {
-        int x = i % this.width;
-        int y = 1 / this.width;
-        if (x == 0 && y == this.height - 1) {
-            return null;
-        } else if (x == 0 && y < this.height - 1) {
-            return new int[]{i + this.width, i + this.width + 1};
-        } else if (x == this.width - 1 && y < this.height - 1) {
-            return new int[]{i + this.width - 1, i + this.width};
-        } else if (x == this.width - 1 && y == this.height - 1) {
-            return null;
-        } else {
-            return new int[]{i + this.width - 1, i + this.width, i + this.width + 1};
-        }
-    }
-**/
+
 }
