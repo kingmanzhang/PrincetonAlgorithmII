@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0383b92f-5c37-4f7c-93a0-0fd8a8b62b57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java" />
-    </list>
+    <list default="true" id="0383b92f-5c37-4f7c-93a0-0fd8a8b62b57" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,25 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeamCarver.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java">
+      <file leaf-file-name="BaseballElimination.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIII/BaseballElimination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="301" column="74" lean-forward="false" selection-start-line="301" selection-start-column="74" selection-end-line="301" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11476#11477#0" expanded="true" />
-                <element signature="e#11529#11530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeamCarverTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="103" column="58" lean-forward="false" selection-start-line="103" selection-start-column="58" selection-end-line="103" selection-end-column="58" />
+            <state relative-caret-position="689">
+              <caret line="163" column="33" lean-forward="false" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,64 +24,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Picture.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.class">
+      <file leaf-file-name="BaseballEliminationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIII/BaseballEliminationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pattern-Law.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Law.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pattern-Lee.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-Lee.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pattern-small.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectII/pattern-small.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomSeq.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/RandomSeq.java">
+      <file leaf-file-name="FordFulkerson.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FordFulkerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="996">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Picture.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.java">
+      <file leaf-file-name="FlowEdge.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FlowEdge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3375">
-              <caret line="268" column="44" lean-forward="false" selection-start-line="268" selection-start-column="44" selection-end-line="268" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="245">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EulerianPath.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/EulerianPath.class">
+      <file leaf-file-name="FlowNetwork.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FlowNetwork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="167" column="5" lean-forward="false" selection-start-line="167" selection-start-column="5" selection-end-line="167" selection-end-column="5" />
+            <state relative-caret-position="296">
+              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -152,6 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectI/SAP.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIII/BaseballEliminationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIII/BaseballElimination.java" />
       </list>
     </option>
   </component>
@@ -164,10 +125,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1280" />
-    <option name="y" value="-56" />
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1400" />
+    <option name="y" value="-46" />
+    <option name="width" value="1640" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -188,6 +149,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,36 +168,6 @@
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectII" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,7 +183,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectII" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectIII" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
@@ -283,9 +217,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,6 +230,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kingmanzhang.ProjectIII" />
       <recent name="com.kingmanzhang.ProjectII" />
       <recent name="com.kingmanzhang.ProjectI" />
     </key>
@@ -310,6 +242,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/ProjectIII" />
       <recent name="$PROJECT_DIR$/src/test/resources/ProjectII" />
       <recent name="$PROJECT_DIR$/src/test/resources/ProjectI" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -327,20 +260,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeamCarverTest.removeHorizontalSeam">
-    <configuration name="SeamCarverTest.energy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BaseballEliminationTest.testConstructor">
+    <configuration name="BaseballEliminationTest.against" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
-      <option name="METHOD_NAME" value="energy" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
+      <option name="METHOD_NAME" value="against" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -353,19 +286,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SeamCarverTest.findHorizontalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationTest.losses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
-      <option name="METHOD_NAME" value="findHorizontalSeam" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
+      <option name="METHOD_NAME" value="losses" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -378,19 +311,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SeamCarverTest.findVerticalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationTest.remaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
-      <option name="METHOD_NAME" value="findVerticalSeam" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
+      <option name="METHOD_NAME" value="remaining" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -403,19 +336,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SeamCarverTest.removeHorizontalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
-      <option name="METHOD_NAME" value="removeHorizontalSeam" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
+      <option name="METHOD_NAME" value="testConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -428,19 +361,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SeamCarverTest.removeVerticalSeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationTest.testHashSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectII.SeamCarverTest" />
-      <option name="METHOD_NAME" value="removeVerticalSeam" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
+      <option name="METHOD_NAME" value="testHashSet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -535,19 +468,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.energy" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findHorizontalSeam" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findVerticalSeam" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeHorizontalSeam" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeVerticalSeam" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.losses" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.remaining" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.testHashSet" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.testConstructor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeHorizontalSeam" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.removeVerticalSeam" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findVerticalSeam" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.findHorizontalSeam" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SeamCarverTest.energy" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.testConstructor" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.testHashSet" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.remaining" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.losses" />
       </list>
     </recent_temporary>
   </component>
@@ -565,67 +498,67 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeamCarverTest_findVerticalSeam - 2017.11.27 at 21h 20m 11s.xml">
-      <configuration name="SeamCarverTest.findVerticalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_against - 2017.12.03 at 14h 58m 05s.xml">
+      <configuration name="BaseballEliminationTest.against" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeHorizontalSeam - 2017.11.27 at 21h 23m 33s.xml">
-      <configuration name="SeamCarverTest.removeHorizontalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_losses - 2017.12.03 at 14h 54m 54s.xml">
+      <configuration name="BaseballEliminationTest.losses" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeHorizontalSeam - 2017.11.27 at 22h 27m 36s.xml">
-      <configuration name="SeamCarverTest.removeHorizontalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_remaining - 2017.12.03 at 14h 55m 37s.xml">
+      <configuration name="BaseballEliminationTest.remaining" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeHorizontalSeam - 2017.11.27 at 22h 30m 37s.xml">
-      <configuration name="SeamCarverTest.removeHorizontalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_teams - 2017.12.03 at 14h 51m 45s.xml">
+      <configuration name="BaseballEliminationTest.teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeHorizontalSeam - 2017.11.27 at 22h 32m 54s.xml">
-      <configuration name="SeamCarverTest.removeHorizontalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_teams - 2017.12.03 at 14h 52m 12s.xml">
+      <configuration name="BaseballEliminationTest.teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeHorizontalSeam - 2017.11.27 at 22h 49m 05s.xml">
-      <configuration name="SeamCarverTest.removeHorizontalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_testConstructor - 2017.12.03 at 16h 54m 12s.xml">
+      <configuration name="BaseballEliminationTest.testConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.27 at 21h 23m 56s.xml">
-      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_testConstructor - 2017.12.03 at 16h 55m 01s.xml">
+      <configuration name="BaseballEliminationTest.testConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.27 at 22h 36m 34s.xml">
-      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_testConstructor - 2017.12.03 at 16h 56m 58s.xml">
+      <configuration name="BaseballEliminationTest.testConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.27 at 22h 38m 40s.xml">
-      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_testHashSet - 2017.12.03 at 16h 51m 23s.xml">
+      <configuration name="BaseballEliminationTest.testHashSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverTest_removeVerticalSeam - 2017.11.27 at 22h 48m 50s.xml">
-      <configuration name="SeamCarverTest.removeVerticalSeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationTest_wins - 2017.12.03 at 14h 54m 02s.xml">
+      <configuration name="BaseballEliminationTest.wins" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-56" width="1920" height="1057" extended-state="6" />
+    <frame x="1400" y="-46" width="1640" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32690355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2568528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2568528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18963414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -647,51 +580,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Counter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/CC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DigraphGenerator.java.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3635">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DigraphGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DirectedCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DirectedDFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1307">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -979,7 +867,7 @@
         <state relative-caret-position="3375">
           <caret line="268" column="44" lean-forward="false" selection-start-line="268" selection-start-column="44" selection-end-line="268" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -989,32 +877,80 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectII/SeamCarverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
+        <state relative-caret-position="1500">
           <caret line="103" column="58" lean-forward="false" selection-start-line="103" selection-start-column="58" selection-end-line="103" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectII/SeamCarver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="15">
           <caret line="301" column="74" lean-forward="false" selection-start-line="301" selection-start-column="74" selection-end-line="301" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11476#11477#0" expanded="true" />
-            <element signature="e#11529#11530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Picture.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2235">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FordFulkerson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FlowEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIII/BaseballEliminationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FordFulkerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="996">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/FlowNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIII/BaseballElimination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="163" column="33" lean-forward="false" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
