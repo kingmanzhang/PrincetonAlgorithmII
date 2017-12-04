@@ -1,5 +1,6 @@
 package com.kingmanzhang.ProjectIII;
 
+import com.sun.xml.internal.rngom.parse.host.Base;
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.jupiter.api.Test;
 
@@ -62,6 +63,9 @@ class BaseballEliminationTest {
         assertEquals(80, baseballElimination.wins("Philadelphia"));
         assertEquals(78, baseballElimination.wins("New_York"));
         assertEquals(77, baseballElimination.wins("Montreal"));
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.wins("Wisconsin");
+        });
     }
 
     @Test
@@ -72,6 +76,9 @@ class BaseballEliminationTest {
         assertEquals(79, baseballElimination.losses("Philadelphia"));
         assertEquals(78, baseballElimination.losses("New_York"));
         assertEquals(82, baseballElimination.losses("Montreal"));
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.losses("Wisconsin");
+        });
     }
 
     @Test
@@ -82,6 +89,9 @@ class BaseballEliminationTest {
         assertEquals(3, baseballElimination.remaining("Philadelphia"));
         assertEquals(6, baseballElimination.remaining("New_York"));
         assertEquals(3, baseballElimination.remaining("Montreal"));
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.remaining("Wisconsin");
+        });
     }
 
     @Test
@@ -92,17 +102,69 @@ class BaseballEliminationTest {
         assertEquals(1, baseballElimination.against("Philadelphia", "Atlanta"));
         assertEquals(6, baseballElimination.against("Atlanta", "New_York"));
         assertEquals(0, baseballElimination.against("New_York", "Montreal"));
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.against("Wisconsin", "Atlanta");
+        });
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.against("Atlanta", "Wisconsin");
+        });
+        assertThrows(IllegalArgumentException.class, ()-> {
+            baseballElimination.against("Wisconsin", "Minnesota");
+        });
 
     }
 
     @Test
     void isEliminated() {
+        /**
+        String file1 = "src/test/resources/ProjectIII/teams4.txt";
+        BaseballElimination baseballElimination = new BaseballElimination(file1);
+        assertEquals(true, baseballElimination.isEliminated("Montreal"));
+        StdOut.println("test Philadelphia");
+        assertEquals(true, baseballElimination.isEliminated("Philadelphia"));
+        StdOut.println("test New York");
+        assertEquals(false, baseballElimination.isEliminated("New_York"));
+**/
+
+        String file2 = "src/test/resources/ProjectIII/teams5.txt";
+        BaseballElimination baseballElimination2 = new BaseballElimination(file2);
+        StdOut.println("test New York");
+        assertEquals(false, baseballElimination2.isEliminated("New_York"));
+        StdOut.println("\n\ntest Baltimore");
+        assertEquals(false, baseballElimination2.isEliminated("Baltimore"));
+        StdOut.println("\n\ntest Detroit");
+        assertEquals(true, baseballElimination2.isEliminated("Detroit"));
+
     }
 
     @Test
     void certificateOfElimination() {
+        StdOut.println("team4");
+        String file1 = "src/test/resources/ProjectIII/teams4.txt";
+        checkall(file1);
+        StdOut.println("\n\nteam5");
+        String file2 = "src/test/resources/ProjectIII/teams5.txt";
+        checkall(file2);
+        StdOut.println("\n\nteam12");
+        String file3 = "src/test/resources/ProjectIII/teams12.txt";
+        checkall(file3);
+
     }
 
+    private void checkall(String file) {
+        BaseballElimination division = new BaseballElimination(file);
+        for (String team : division.teams()) {
+            if (division.isEliminated(team)) {
+                StdOut.print(team + " is eliminated by the subset R = { ");
+                for (String t : division.certificateOfElimination(team)) {
+                    StdOut.print(t + " ");
+                }
+                StdOut.println("}");
+            } else {
+                StdOut.println(team + " is not eliminated");
+            }
+        }
+    }
     @Test
     void testHashSet() {
         HashSet<Integer> set1 = new HashSet<>();

@@ -7,8 +7,8 @@ import java.util.*;
 public class BaseballElimination {
 
     private int numTeams;
-    private HashMap<String, Integer> teamVertices; //teamVertices vertices
-    private HashMap<HashSet<Integer>, Integer> gameVertices; //game vertices
+    private LinkedHashMap<String, Integer> teamVertices; //teamVertices vertices
+    private LinkedHashMap<Integer, HashSet<Integer>> gameVertices; //game vertices TODO: may be unnecessary
     private int [] wins;
     private int [] losses;
     private int [] remaining;
@@ -16,6 +16,8 @@ public class BaseballElimination {
     private int verticesFlownetwork; //total vertices in the flownetwork
     //private FlowNetwork flowNetwork; //construct flowNetwork
     private FordFulkerson fordFulkerson; //perform fordFulkerson analysis of the flowNetwork
+    private double MAXPOINTSREMAINING = 0.0; //points for unplayed games among non-interested teams
+    private ArrayList<String> R = new ArrayList<>(); //subset of teams that eliminate a query team
 
 
     public BaseballElimination(String filename) { // create a baseball division from given filename in format specified below
@@ -30,8 +32,8 @@ public class BaseballElimination {
             this.losses = new int[numTeams];
             this.remaining = new int[numTeams];
             this.remainingGames = new int[numTeams][numTeams];
-            this.teamVertices = new HashMap<>();
-            this.gameVertices = new HashMap<>();
+            this.teamVertices = new LinkedHashMap<>();
+            this.gameVertices = new LinkedHashMap<>();
         }
 
         Scanner scnr;
@@ -88,23 +90,35 @@ public class BaseballElimination {
         return teamVertices.keySet();
     }
 
+    private void validateTeam(String team) {
+
+        if (!teamVertices.containsKey(team)) {
+            throw new IllegalArgumentException();
+        }
+
+    }
     public int wins(String team) {// number of wins for given team
 
+        validateTeam(team);
         return wins[teamVertices.get(team)];
     }
 
     public int losses(String team) {// number of losses for given team
 
+        validateTeam(team);
         return losses[teamVertices.get(team)];
     }
 
     public int remaining(String team) {// number of remaining gameVertices for given team
 
+        validateTeam(team);
         return remaining[teamVertices.get(team)];
     }
 
     public int against(String team1, String team2) {// number of remaining gameVertices between team1 and team2
 
+        validateTeam(team1);
+        validateTeam(team2);
         return this.remainingGames[this.teamVertices.get(team1)][this.teamVertices.get(team2)];
 
         /**
@@ -117,37 +131,26 @@ public class BaseballElimination {
 
     }
 
-    private ArrayList<String> trivialElimination(String team) {
+    private void trivialElimination(String team) {
 
-        ArrayList<String> teamsWithMoreWins = new ArrayList<>();
         int max = wins(team) + remaining(team);
+ //StdOut.println("Enter trivial Elimination test. max win for query team is " + max);
         for (String other : teams()) { //if any team already has more wins, then query team is eliminated
             if (!other.equals(team) && wins(other) > max) {
-                teamsWithMoreWins.add(other);
+ //StdOut.println("Team " + other + " already has more wins than query team");
+                R.add(other);
             }
         }
-        return teamsWithMoreWins;
-
     }
 
     private void nontrivialElimination(String team) {
-        int v = teamVertices.get(team);
-        int startGameVertices = this.numTeams - 1;
-        for (int i = 0; i < this.numTeams - 1; i++) {
-            for (int j = i + 1; j < this.numTeams; j++) {
-                if (i != v && j != v) {
-                    HashSet<Integer> pair = new HashSet<>();
-                    pair.add(i);
-                    pair.add(j);
- StdOut.printf("game pair: [%d, %d]", i, j);
-                    this.gameVertices.put(pair, startGameVertices++);
-                }
 
-            }
-        }
-        this.verticesFlownetwork = this.teamVertices.size() - 1 + this.gameVertices.size() + 2;
- StdOut.println("num of vertices in flow network: " + this.verticesFlownetwork);
-
+//StdOut.println("enter nontrivial test. this.R should be empty. Is it empty: " + this.R.isEmpty());
+        //if there are 5 teams, the number of vertices in the flow network should be
+        //5 (1 is not used) + 4 * 3 / 2 (game vertices) + 1 (source) + 1 (target)
+        this.verticesFlownetwork = this.numTeams + (this.numTeams - 1) * (this.numTeams - 2) / 2 + 2;
+        int v = teamVertices.get(team); //this vertice will not be used in the flow network
+        //create a flow network. Last vertice is target (verticeFlownetwork - 1), second last is source (verticeFlownetwork - 2)
         FlowNetwork flowNetwork = new FlowNetwork(this.verticesFlownetwork);
 
         /**
@@ -158,53 +161,86 @@ public class BaseballElimination {
             }
         }
         **/
+
+        //create edges from team vertices to target
         for (int i = 0; i < numTeams; i++) {
             if (i != v) {
-                FlowEdge flowEdge = new FlowEdge(i, verticesFlownetwork - 1, wins[v] + losses[v] - wins[i]);
+                FlowEdge flowEdge = new FlowEdge(i, verticesFlownetwork - 1, wins[v] + remaining[v] - wins[i]); //target vertice set to last of flow network
                 flowNetwork.addEdge(flowEdge);
             }
         }
-        for (HashSet<Integer> set : gameVertices.keySet()) {
-            //for each game vertice, first add an edge from source to game vertice
-            Iterator<Integer> itr = set.iterator(); //each set has two numbers
-            int vTeam1 = itr.next();
-            int vTeam2 = itr.next();
-            if (vTeam1 != v && vTeam2 != v) {
-                int vGame = gameVertices.get(set);
-                FlowEdge source_game_edge = new FlowEdge(verticesFlownetwork - 2, vGame, remainingGames[vTeam1][vTeam2]);
-                flowNetwork.addEdge(source_game_edge);
-                FlowEdge game_team1_edge = new FlowEdge(vGame, vTeam1, Double.MAX_VALUE);
-                FlowEdge game_team2_edge = new FlowEdge(vGame, vTeam2, Double.MAX_VALUE);
-                flowNetwork.addEdge(game_team1_edge);
-                flowNetwork.addEdge(game_team2_edge);
+
+        //handle game vertices
+        int iGameVertices = this.numTeams;
+        for (int i = 0; i < this.numTeams - 1; i++) {
+            for (int j = i + 1; j < this.numTeams; j++) {
+                if (i != v && j != v) {
+                    HashSet<Integer> pair = new HashSet<>();
+                    pair.add(i);
+                    pair.add(j);
+  //StdOut.printf("game pair: [%d, %d]", i, j);
+  //in case I need to see what is in game vertices
+  this.gameVertices.put(iGameVertices, pair);
+                    MAXPOINTSREMAINING += remainingGames[i][j];
+                    FlowEdge source_game_edge = new FlowEdge(verticesFlownetwork - 2, iGameVertices, remainingGames[i][j]);
+                    FlowEdge game_team1_edge = new FlowEdge(iGameVertices, i, Double.MAX_VALUE);
+                    FlowEdge game_team2_edge = new FlowEdge(iGameVertices, j, Double.MAX_VALUE);
+                    flowNetwork.addEdge(source_game_edge);
+                    flowNetwork.addEdge(game_team1_edge);
+                    flowNetwork.addEdge(game_team2_edge);
+                    iGameVertices++;
+                }
             }
         }
         this.fordFulkerson = new FordFulkerson(flowNetwork, verticesFlownetwork - 2, verticesFlownetwork - 1);
+        for (String other : teams()) {
+            if (!other.equals(team) && this.fordFulkerson.inCut(teamVertices.get(other))) {
+                this.R.add(other);
+            }
+        }
+ //StdOut.println("Exiting nontrivial test. Is this.R empty now: " + this.R.isEmpty());
     }
 
     public boolean isEliminated(String team) { // is given team eliminated?
 
+        validateTeam(team);
+        if (!this.R.isEmpty()) { //initialize the subset of R
+            this.R = new ArrayList<>();
+        }
+        this.MAXPOINTSREMAINING = 0.0;
         //first check whether it is a trivial elimination
-        if (!trivialElimination(team).isEmpty()) {
+        trivialElimination(team);
+        if (!this.R.isEmpty()) {
             return true;
         }
         //if not trivially eliminated, test nontrivial elimination
-        return this.fordFulkerson.inCut(verticesFlownetwork - 2);
+        nontrivialElimination(team);
+        //if max flow is the same as unplayed points, then x is not eliminated
+ //StdOut.printf("Max flow: %f, MAX POINTS Remaining: %f \n", this.fordFulkerson.value(), MAXPOINTSREMAINING);
+        return !(Math.abs(this.fordFulkerson.value() - MAXPOINTSREMAINING) < 0.001);
     }
 
     public Iterable<String> certificateOfElimination(String team) {// subset R of teamVertices that eliminates given team; null if not eliminated
 
-        if (!trivialElimination(team).isEmpty()) {
-            return trivialElimination(team);
-        }
+        validateTeam(team);
+        return this.R;
 
-        ArrayList<String> targetTeams = new ArrayList<>();
-        for (String other : teams()) {
-            if (!other.equals(team) && fordFulkerson.inCut(teamVertices.get(other))) {
-                targetTeams.add(other);
+    }
+
+    public static void main(String[] args) {
+        BaseballElimination division = new BaseballElimination(args[0]);
+        for (String team : division.teams()) {
+            if (division.isEliminated(team)) {
+                StdOut.print(team + " is eliminated by the subset R = { ");
+                for (String t : division.certificateOfElimination(team)) {
+                    StdOut.print(t + " ");
+                }
+                StdOut.println("}");
+            }
+            else {
+                StdOut.println(team + " is not eliminated");
             }
         }
-        return targetTeams;
     }
 
 }
