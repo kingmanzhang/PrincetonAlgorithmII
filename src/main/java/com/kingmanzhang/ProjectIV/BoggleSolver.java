@@ -1,25 +1,21 @@
 package com.kingmanzhang.ProjectIV;
 
 import edu.princeton.cs.algs4.Digraph;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.TST;
-
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class BoggleSolver {
 
-    private TST<Boolean> dictionary; //use a TST for dictionary
+    private TrieST_lite<Boolean> dictionary; //use a TST for dictionary
     private HashSet<String> validWords;
+
     //private boolean getAllValidWordsRun; //whether the getAllValidWords() is run
 
     // Initializes the data structure using the given array of strings as the dictionary.
     // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
     public BoggleSolver(String[] dictionary){
 
-        //this.getAllValidWordsRun = false;
-        this.dictionary = new TST<>();
+        this.dictionary = new TrieST_lite<>();
         this.validWords = new HashSet<>();
         //put all word in the dictionary to the TST as (word, true) pairs
         for (int i = 0; i < dictionary.length; i++) {
@@ -46,6 +42,7 @@ public class BoggleSolver {
                 int right_up = up + 1;
                 int right_down = down + 1;
                 charBoard[current] = board.getLetter(i, j);
+                //charSet.put(current, board.getLetter(i, j));
                 //add left. cannot be the leftmost
                 if (j != 0) {
                     digraph.addEdge(current, left);
@@ -82,15 +79,15 @@ public class BoggleSolver {
                 }
             }
         }
- StdOut.println(digraph);
-  StdOut.println(Arrays.toString(charBoard));
     }
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board){
         //this.getAllValidWordsRun = true;
+        this.validWords = new HashSet<>();
         int row = board.rows();
         int col = board.cols();
         char[] charBoard = new char[row * col]; //chars of the board
+        //HashMap<Integer, Character> charSet = new HashMap<>();
         Digraph digraph = new Digraph(row * col);
         //create a digraph from the board
         //and get an array of chars in the board
@@ -101,7 +98,6 @@ public class BoggleSolver {
         for (int i = 0; i < row * col; i++) {
             Arrays.fill(visited, false);
             String prefix = "";
-StdOut.printf("\n\n\nsource node: %d : %c \n", i, charBoard[i]);
             dfs(digraph, i, prefix, this.validWords, visited, charBoard);
         }
         return new HashSet<>(this.validWords);
@@ -116,35 +112,15 @@ StdOut.printf("\n\n\nsource node: %d : %c \n", i, charBoard[i]);
     }
 
     private void dfs(Digraph digraph, int v, String prefix, HashSet<String> wordset, boolean[] visited, char[] charBoard){
-        visited[v] = true;
+        boolean [] local_visited = Arrays.copyOf(visited, visited.length);
+        local_visited[v] = true;
         prefix = updated_prefix(prefix, charBoard[v]);
- StdOut.println("current prefix: " + prefix);
-
         if (prefix.length() >= 3 && this.dictionary.contains(prefix)) {
             wordset.add(prefix);
- StdOut.println("new word found: " + prefix);
         }
-        /**
         for (int w : digraph.adj(v)) {
-            if (!visited[w]) {
-
-                dfs(digraph, w, prefix, wordset, visited, charBoard);
-            }
-        }
-         **/
-
-        //if (this.dictionary.keysWithPrefix(prefix).iterator().hasNext()) {
-        for (int w : digraph.adj(v)) {
-  StdOut.printf("current node is %d. neighbours: ", v);
-  Iterator<Integer> adj = digraph.adj(v).iterator();
-                while (adj.hasNext()) {
-                    StdOut.print(adj.next() + " ");
-                }
-
-  StdOut.println("\n" + Arrays.toString(visited));
-            if (!visited[w] && this.dictionary.keysWithPrefix(updated_prefix(prefix, charBoard[w])).iterator().hasNext()) {
- StdOut.printf("current node is %d, go to visit %d : %c\n\n", v, w, charBoard[w]);
-                dfs(digraph, w, prefix, wordset, visited, charBoard);
+            if (!local_visited[w] && this.dictionary.prefixExist(prefix)) {
+                dfs(digraph, w, prefix, wordset, local_visited, charBoard);
             }
         }
     }
@@ -155,8 +131,7 @@ StdOut.printf("\n\n\nsource node: %d : %c \n", i, charBoard[i]);
         if (word == null) {
             throw new IllegalArgumentException();
         }
-        Iterator<String> itr = this.validWords.iterator();
-        if (this.validWords.contains(word)) {
+        if (this.dictionary.contains(word)) {
             int len = word.length();
             switch (len) {
                 case 0:
@@ -178,24 +153,6 @@ StdOut.printf("\n\n\nsource node: %d : %c \n", i, charBoard[i]);
                 default:
                     return 11;
             }
-            /**
-            if (len <= 2){
-                return 0;
-            }
-            if (len <= 4){
-                return 1;
-            }
-            if (len == 5){
-                return 2;
-            }
-            if (len == 6){
-                return 3;
-            }
-            if (len == 7){
-                return 5;
-            }
-            return 11;
-             **/
         } else {
             return 0;
         }
