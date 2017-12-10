@@ -1,6 +1,7 @@
 package com.kingmanzhang.ProjectIV;
 
 import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.TST;
 
 import java.util.Arrays;
@@ -50,7 +51,7 @@ public class BoggleSolver {
                     digraph.addEdge(current, left);
                 }
                 //add right
-                if (j != col) {
+                if (j != col - 1) {
                     digraph.addEdge(current, right);
                 }
                 //add up
@@ -58,7 +59,7 @@ public class BoggleSolver {
                     digraph.addEdge(current, up);
                 }
                 //add down
-                if (i != row) {
+                if (i != row - 1) {
                     digraph.addEdge(current, down);
                 }
 
@@ -68,19 +69,21 @@ public class BoggleSolver {
                 }
 
                 //add left bottom corner. cannot be the first column or last row
-                if (i != row && j != 0) {
+                if (i != row - 1 && j != 0) {
                     digraph.addEdge(current, left_down);
                 }
                 //add right up corner. cannot be first row or last col
-                if (i != 0 && j != col) {
+                if (i != 0 && j != col - 1) {
                     digraph.addEdge(current, right_up);
                 }
                 //add right bottom corner. cannot be last row or last col
-                if (i != row && j != col) {
+                if (i != row - 1 && j != col - 1) {
                     digraph.addEdge(current, right_down);
                 }
             }
         }
+ StdOut.println(digraph);
+  StdOut.println(Arrays.toString(charBoard));
     }
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board){
@@ -98,25 +101,50 @@ public class BoggleSolver {
         for (int i = 0; i < row * col; i++) {
             Arrays.fill(visited, false);
             String prefix = "";
+StdOut.printf("\n\n\nsource node: %d : %c \n", i, charBoard[i]);
             dfs(digraph, i, prefix, this.validWords, visited, charBoard);
         }
         return new HashSet<>(this.validWords);
     }
 
+    private String updated_prefix(String prefix, char c) {
+        if (c == 'Q') {
+            return prefix + "QU";
+        } else {
+            return prefix + c;
+        }
+    }
+
     private void dfs(Digraph digraph, int v, String prefix, HashSet<String> wordset, boolean[] visited, char[] charBoard){
         visited[v] = true;
-        prefix = prefix + charBoard[v];
-        if (charBoard[v] == 'Q') {
-            prefix += 'U';
-        }
-        if (prefix.length() >= 3 && this.dictionary.get(prefix)) {
+        prefix = updated_prefix(prefix, charBoard[v]);
+ StdOut.println("current prefix: " + prefix);
+
+        if (prefix.length() >= 3 && this.dictionary.contains(prefix)) {
             wordset.add(prefix);
+ StdOut.println("new word found: " + prefix);
         }
-        if (this.dictionary.keysWithPrefix(prefix).iterator().hasNext()) {
-            for (int w : digraph.adj(v)) {
-                if (!visited[w]) {
-                    dfs(digraph, w, prefix, wordset, visited, charBoard);
+        /**
+        for (int w : digraph.adj(v)) {
+            if (!visited[w]) {
+
+                dfs(digraph, w, prefix, wordset, visited, charBoard);
+            }
+        }
+         **/
+
+        //if (this.dictionary.keysWithPrefix(prefix).iterator().hasNext()) {
+        for (int w : digraph.adj(v)) {
+  StdOut.printf("current node is %d. neighbours: ", v);
+  Iterator<Integer> adj = digraph.adj(v).iterator();
+                while (adj.hasNext()) {
+                    StdOut.print(adj.next() + " ");
                 }
+
+  StdOut.println("\n" + Arrays.toString(visited));
+            if (!visited[w] && this.dictionary.keysWithPrefix(updated_prefix(prefix, charBoard[w])).iterator().hasNext()) {
+ StdOut.printf("current node is %d, go to visit %d : %c\n\n", v, w, charBoard[w]);
+                dfs(digraph, w, prefix, wordset, visited, charBoard);
             }
         }
     }
