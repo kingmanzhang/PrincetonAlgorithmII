@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0383b92f-5c37-4f7c-93a0-0fd8a8b62b57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleSolver.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleSolver.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="BoggleSolver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2579">
-              <caret line="172" column="9" lean-forward="false" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+            <state relative-caret-position="156">
+              <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,30 +26,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DepthFirstSearch.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/DepthFirstSearch.java">
+      <file leaf-file-name="dictionary-algs4.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/dictionary-algs4.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="-89788">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoggleBoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleBoard.java">
+      <file leaf-file-name="BoggleSolverTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIV/BoggleSolverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5951#5952#0" expanded="true" />
-                <element signature="e#5975#5976#0" expanded="true" />
-                <element signature="e#6087#6088#0" expanded="true" />
-                <element signature="e#6111#6112#0" expanded="true" />
-                <element signature="e#6439#6440#0" expanded="true" />
-                <element signature="e#6473#6474#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board-q.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/board-q.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board4x4.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/board4x4.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,8 +69,8 @@
       <file leaf-file-name="TST.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/TST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="214" column="21" lean-forward="false" selection-start-line="214" selection-start-column="21" selection-end-line="214" selection-end-column="21" />
+            <state relative-caret-position="486">
+              <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -67,7 +79,7 @@
       <file leaf-file-name="TrieST.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/TrieST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
+            <state relative-caret-position="703">
               <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
               <folding />
             </state>
@@ -80,8 +92,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -127,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIII/BaseballElimination.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleSolver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIV/BoggleSolverTest.java" />
       </list>
     </option>
   </component>
@@ -139,11 +152,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="133" />
     <option name="y" value="31" />
-    <option name="width" value="1084" />
-    <option name="height" value="612" />
+    <option name="width" value="1102" />
+    <option name="height" value="682" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -175,27 +188,6 @@
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrincetonAlgorithmII" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kingmanzhang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PrincetonAlgorithmII" type="b2602c69:ProjectViewProjectNode" />
@@ -260,6 +252,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kingmanzhang.ProjectIV" />
       <recent name="com.kingmanzhang.ProjectIII" />
       <recent name="com.kingmanzhang.ProjectII" />
       <recent name="com.kingmanzhang.ProjectI" />
@@ -291,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BaseballEliminationTest">
+  <component name="RunManager" selected="JUnit.BoggleSolverTest.getAllValidWords">
     <configuration name="BaseballEliminationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -392,19 +385,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BaseballEliminationTest.remaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoggleSolverTest.getAllValidWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.kingmanzhang.ProjectIII.*" />
+          <option name="PATTERN" value="com.kingmanzhang.ProjectIV.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="PrincetonAlgorithmII" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIII" />
-      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIII.BaseballEliminationTest" />
-      <option name="METHOD_NAME" value="remaining" />
+      <option name="PACKAGE_NAME" value="com.kingmanzhang.ProjectIV" />
+      <option name="MAIN_CLASS_NAME" value="com.kingmanzhang.ProjectIV.BoggleSolverTest" />
+      <option name="METHOD_NAME" value="getAllValidWords" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -499,19 +492,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.remaining" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.isEliminated" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.certificateOfElimination" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.isEliminated" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.certificateOfElimination" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BoggleSolverTest.getAllValidWords" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.certificateOfElimination" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.isEliminated" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.remaining" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BoggleSolverTest.getAllValidWords" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.certificateOfElimination" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.isEliminated" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BaseballEliminationTest.against" />
       </list>
     </recent_temporary>
   </component>
@@ -529,53 +522,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 23m 14s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 05m 02s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 28m 43s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 05m 30s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 39m 18s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 07m 28s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 52m 59s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 09m 34s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 53m 39s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 18m 04s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 20h 54m 37s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 32m 56s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 21h 03m 24s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 35m 18s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest - 2017.12.03 at 21h 05m 37s.xml">
-      <configuration name="BaseballEliminationTest" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 22h 38m 02s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest_certificateOfElimination - 2017.12.03 at 20h 15m 59s.xml">
-      <configuration name="BaseballEliminationTest.certificateOfElimination" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 23h 16m 47s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationTest_certificateOfElimination - 2017.12.03 at 20h 18m 13s.xml">
-      <configuration name="BaseballEliminationTest.certificateOfElimination" configurationId="JUnit" />
+    <history-entry file="BoggleSolverTest_getAllValidWords - 2017.12.09 at 23h 17m 34s.xml">
+      <configuration name="BoggleSolverTest.getAllValidWords" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="31" width="1084" height="612" extended-state="0" />
+    <frame x="45" y="23" width="1235" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32340425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2568528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38865247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28690037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25182188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -586,7 +581,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32690355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -610,55 +604,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/digraph9.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets15.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets100-subgraph.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/synsets3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms3InvalidCycle.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectI/hypernyms6InvalidCycle.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -937,10 +882,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/TrieST.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/dictionary-2letters.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/dictionary-16q.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -950,13 +903,13 @@
         <state relative-caret-position="150">
           <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5951#5952#0" expanded="true" />
-            <element signature="e#5975#5976#0" expanded="true" />
-            <element signature="e#6087#6088#0" expanded="true" />
-            <element signature="e#6111#6112#0" expanded="true" />
-            <element signature="e#6439#6440#0" expanded="true" />
-            <element signature="e#6473#6474#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5951#5952#0" expanded="false" />
+            <element signature="e#5975#5976#0" expanded="false" />
+            <element signature="e#6087#6088#0" expanded="false" />
+            <element signature="e#6111#6112#0" expanded="false" />
+            <element signature="e#6439#6440#0" expanded="false" />
+            <element signature="e#6473#6474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,18 +922,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/Digraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2455">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/TST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="214" column="21" lean-forward="false" selection-start-line="214" selection-start-column="21" selection-end-line="214" selection-end-column="21" />
+        <state relative-caret-position="486">
+          <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/dictionary-algs4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89788">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/board4x4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ProjectIV/board-q.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/Princeton/algs4/1.0/algs4-1.0.jar!/edu/princeton/cs/algs4/TrieST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kingmanzhang/ProjectIV/BoggleSolverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingmanzhang/ProjectIV/BoggleSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2579">
-          <caret line="172" column="9" lean-forward="false" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+        <state relative-caret-position="156">
+          <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
